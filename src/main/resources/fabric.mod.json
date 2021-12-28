@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "mc2d",
+  "version": "${version}",
+
+  "name": "MC2D",
+  "description": "Minecraft Chat to Discord",
+  "authors": [
+    "REMAN!"
+  ],
+  "contact": {
+    "homepage": "https://github.com/reman8683",
+    "sources": "https://github.com/reman8683/MC2D"
+  },
+
+  "license": "MIT",
+  "icon": "assets/mc2d/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.reman8683.mc2d.MC2D"
+    ]
+  },
+  "mixins": [
+    "mc2d.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.11.3",
+    "fabric": "*",
+    "minecraft": "1.17.x",
+    "java": ">=16"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
